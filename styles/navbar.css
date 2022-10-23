@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#navbar{
+    width: 65%;
+    margin: auto;
+    left: 0;
+    background-color: black;
+    right: 0;
+    position: fixed;
+    top: 0;
+    /* border: 1px solid red; */
+    z-index: 10;
+    
+
+}
+#navbar>#nav{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    height: 70px;
+
+}
+
+#navbar>#nav>div{
+    /* border: 1px solid red; */
+}
+
+#navbar>#nav>div:first-child{
+    width: 20%;
+}
+#navbar>#nav>div:first-child>img{
+    width: 100%;
+}
+
+#navbar>#nav>div:nth-child(2){
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+#navbar>#nav>div:nth-child(2)>p{
+    color: white;
+    font-weight: bolder;
+    border-bottom: 4px solid green;
+    border-image: linear-gradient(45deg, #c94b4b, #4b134f);
+    border-image-slice: 1;
+    cursor: pointer;
+
+}
+
+
+#navbar>#nav>div:last-child{
+    width: 35%;
+    display: grid;
+    place-items: center;
+    justify-content: end;
+
+
+  
+}
+#navbar>#nav>div:last-child>div{
+    display: flex;  
+    width: 100%;
+    height: 50%;
+    justify-content: right;
+
+}
+#navbar>#nav>div:last-child>div>img{
+    border-radius: 3px;
+}
+
+
+
+#searchIcon{
+    /* transform: rotate(90deg); */
+    
+}
+
+#searchDiv{
+    width: 100%;
+    /* border: 1px solid gray; */
+    display: flex;
+    border-radius: 4px;
+
+
+}
+#search{
+    width: 94%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 0;
+    padding: 20px;
+}
+
+#seacrhBtn{
+    width: 6%;
+    cursor: pointer;
+    background: #c94b4b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: 0;
+border-radius: 4px;
+}
+
+#categories{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border-bottom: 4px solid red;
+    outline: none;
+    border-image: linear-gradient(45deg, #c94b4b, #4b134f);
+    border-image-slice: 1;
+}
+#categories>option{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin: 8px;
+}
+#logo{
+    cursor: pointer;
+}
